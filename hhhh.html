@@ -7,16 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
     <!-- <script src="main.js"></script> -->
+    <style>
+        #time{
+            background-color: rgb(142, 142, 235);
+            color:blue;
+        }
+    </style>
 </head>
 <body>
-            <span id="pinl">
-                hello
-            </span>     
-            
-            <span class="lesnar">
-                welcome to suplex city
-            </span>
-      
+
+    <span>
+        1
+    </span>
+
+    <div>
+        <p id="time">
+            Hello....Welcome 
+        </p>
+    </div>
         <script type="text/javascript">
         // let hello=document.getElementById('pinl').innerHTML = 'kite';
         // setTimeout(updater,4000);
@@ -24,13 +32,35 @@
         // function updater(){
         //     document.getElementById('pinl').innerHTML = 'kite';
         // }
-        function suplex(){
-            // document.getElementsByTagName('span')[0].innerHTML='viper ville';
-            document.querySelector('.lesnar').innerHTML = 'hi';
-        }
-        setTimeout(suplex,2000);
+        // function suplex(){
+        //     // document.getElementsByTagName('span')[0].innerHTML='viper ville';
+        //     document.querySelector('.lesnar').innerHTML = 'hi';
+        // }
+        // setTimeout(suplex,2000);
 
         
+        // let a=1;
+
+        // setInterval(function(){
+        //     a++;
+        //     document.querySelector('p').innerHTML+= a;          
+        //     // console.log(y);            
+        // },1000)
+
+        // setTimeout(function(){
+        //     let a=document.getElementById('time').style;
+        //     a.height='30vh';
+        //     a.width='40vw';
+        //     // document.querySelector('div').classList.add('division');
+        // },2000)
+
+            let a=1;
+            function fun(){
+                a++;
+                let b=document.querySelector('span').innerHTML=a;
+            }
         </script>
+        <input value="Click me" onmouseout="fun()" type="button">
+
 </body>
 </html>
