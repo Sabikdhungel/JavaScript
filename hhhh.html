@@ -8,20 +8,25 @@
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
     <!-- <script src="main.js"></script> -->
     <style>
+       body{
+           background-color: red;
+       }
+       
         #time{
             background-color: rgb(142, 142, 235);
-            color:blue;
+            /* color:blue; */
+            height: 40vh;
+        }
+
+        .new{
+            margin-top:6vh;  
         }
     </style>
 </head>
 <body>
 
-    <span>
-        1
-    </span>
-
-    <div>
-        <p id="time">
+    <div id="time">
+        <p>
             Hello....Welcome 
         </p>
     </div>
@@ -54,13 +59,21 @@
         //     // document.querySelector('div').classList.add('division');
         // },2000)
 
-            let a=1;
+            
             function fun(){
-                a++;
-                let b=document.querySelector('span').innerHTML=a;
+                let b=document.querySelector('div').style.backgroundColor="red";
+            }
+
+            function back(){
+                let h=document.querySelector('body').style.backgroundColor="rgb(142, 142, 235)";
             }
         </script>
-        <input value="Click me" onmouseout="fun()" type="button">
+        <div class="new">
+            <input value="Click me to change color of div" onmousedown="fun()" type="button">
+        </div>
+        <div class="new">
+            <input value="Click me to change color of background" onmousedown="back()" type="button">
+        </div>
 
 </body>
 </html>

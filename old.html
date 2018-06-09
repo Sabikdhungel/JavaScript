@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+   <div id="span1" style="background-color: skyblue;" onmouseover="text1()" onmouseout="text2()">
+        Hello.....Welcome
+    </div><br><br>
+
+    <div id="span2" style="background-color:red;" onmouseover="text1()" onmouseout="text2()">
+        To New York
+    </div>
+    <script>
+            let x=document.querySelector('#span1');
+            let y=document.querySelector('#span2');
+        
+            function text1(){
+                x.style.backgroundColor="red";
+                y.style.backgroundColor="skyblue";
+            }
+
+            function text2(){
+                x.style.backgroundColor="skyblyue";
+                y.style.backgroundColor="red";
+            }
+    </script>
+</body>
+</html>
